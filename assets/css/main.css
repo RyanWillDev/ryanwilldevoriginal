@@ -9,6 +9,8 @@ section {
 	height: 100%;
 }
 
+/* About Styles 
+=========================*/
 #about {
 	background-image: linear-gradient(rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.6)),
 				      url('../img/main-bg.jpg');
@@ -25,9 +27,13 @@ section {
 }
 
 .jumbotron h1 {
-	text-transform: capitalize;
+	text-transform: uppercase;
 
 	margin-bottom: 30px;
+}
+
+.description {
+	padding-top: 20px;
 }
 
 #goals {
@@ -42,6 +48,25 @@ section {
 
 .goal-heading {
 	text-transform: uppercase;
+}
+
+/* Project Styles 
+==========================*/
+#projects {
+	background-color: #ddd;
+}
+
+#projects > .container > .row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project {
+	background-color: #eee;
+	height: 150px;
+	max-width: 33%;
+
+	margin-top: 50px;
 }
 
 /*	Typography & Icons 
