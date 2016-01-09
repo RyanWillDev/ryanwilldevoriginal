@@ -1,0 +1,58 @@
+/*	Layout 
+========================*/
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+section {
+	height: 100%;
+}
+
+#about {
+	background-image: linear-gradient(rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.6)),
+				      url('../img/main-bg.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jumbotron {
+	background-color: transparent;
+	text-align: center;
+
+	margin-top: 75px;
+}
+
+.jumbotron h1 {
+	text-transform: capitalize;
+
+	margin-bottom: 30px;
+}
+
+#goals {
+	text-align: center;
+	
+	margin-top: 20px;
+}
+
+#goals p {
+	padding-top: 20px;
+}
+
+.goal-heading {
+	text-transform: uppercase;
+}
+
+/*	Typography & Icons 
+========================*/
+
+.goals-icon {
+	font-size: 2em;
+
+	padding-top: 10px;
+}
+
+#goals p {
+	font-size: 1.25em;
+}
