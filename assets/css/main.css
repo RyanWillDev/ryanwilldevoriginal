@@ -1,12 +1,15 @@
 /*	Layout 
 ========================*/
 html, body {
-	height: 100%;
 	font-family: 'Lato', sans-serif;
 }
 
 section {
 	height: 100%;
+}
+
+.navbar-right {
+	padding-right: 10px;
 }
 
 /* About Styles 
@@ -24,6 +27,7 @@ section {
 	text-align: center;
 
 	margin-top: 75px;
+	margin-bottom: 15px;
 }
 
 .jumbotron h1 {
@@ -39,7 +43,7 @@ section {
 #goals {
 	text-align: center;
 	
-	margin-top: 20px;
+	padding-bottom: 50px;
 }
 
 #goals p {
@@ -56,15 +60,22 @@ section {
 	background-color: #ddd;
 }
 
-#projects > .container > .row {
-	display: flex;
-	justify-content: space-between;
-}
-
 .project-thumb {
 	background-color: #eee;
-	height: 150px;
-	max-width: 30%;
+	height: 192px;
+
+	margin-top: 50px;
+}
+
+/* Project Styles 
+==========================*/
+#resources {
+	background-color: #eee;
+}
+
+.resource-thumb {
+	background-color: #eee;
+	height: 192px;
 
 	margin-top: 50px;
 }
