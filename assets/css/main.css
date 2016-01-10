@@ -61,10 +61,10 @@ section {
 	justify-content: space-between;
 }
 
-.project {
+.project-thumb {
 	background-color: #eee;
 	height: 150px;
-	max-width: 33%;
+	max-width: 30%;
 
 	margin-top: 50px;
 }
