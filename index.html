@@ -26,14 +26,14 @@
       </button><!-- End Hamburger Icon -->
 
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html"><strong>Ryan Will</strong></a>
+        <a class="navbar-brand link" href="index.html"><strong>Ryan Will</strong></a>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#about" class="selected link nav-link">About</a></li>
+          <li><a href="#projects" class="link nav-link">Projects</a></li>
+          <li><a href="#contact" class="link nav-link">Contact</a></li>
+          <li ><a href="#" class="link nav-link">Blog</a></li>
         </ul>
       </div>
     </nav><!-- End Main Navigation -->
@@ -74,36 +74,34 @@
   
   <section id="projects">
     <div class="container">
-      <h3>Projects</h3>
+      <h3 class="section-title text-center">Projects</h3>
       <div class="row">
-        <div class="col-sm-4 project-thumb">Coming Soon!</div>
-        <div class="col-sm-4 project-thumb">Coming Soon!</div>
-        <div class="col-sm-4 project-thumb">Coming Soon!</div>
+        <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 project-thumb">Coming Soon!</div>
+        <div class="col-sm-3 col-xs-8 col-sm-offset-1 col-xs-offset-2 project-thumb">Coming Soon!</div>
+        <div class="col-sm-3 col-xs-8 col-sm-offset-1 col-xs-offset-2 project-thumb">Coming Soon!</div>
       </div>
-      <div class="row">
-        <div class="col-sm-4 hidden-xs project-thumb">Coming Soon!</div>
-        <div class="col-sm-4 hidden-xs project-thumb">Coming Soon!</div>
-        <div class="col-sm-4 hidden-xs project-thumb">Coming Soon!</div>
+      <div class="row hidden-xs project-bottom-row">
+        <div class="col-sm-3 project-thumb">Coming Soon!</div>
+        <div class="col-sm-3 col-sm-offset-1 project-thumb">Coming Soon!</div>
+        <div class="col-sm-3 col-sm-offset-1 project-thumb">Coming Soon!</div>
       </div>
-      <h3>Uh oh! This section is looking a little sparse. I'll get right on that.</h3>
-    </div>
+      <h3 class="text-center project-sub">I know. This section is looking a little sparse. I'm working on it!</h3>
+    </div> <!-- End Container -->
   </section>
 
-  <section id="resources">
+  <footer class="footer" id="contact">
     <div class="container">
-      <h3>Resources</h3>
       <div class="row">
-        <div class="col-sm-4 resource-thumb">Coming Soon!</div>
-        <div class="col-sm-4 resource-thumb">Coming Soon!</div>
-        <div class="col-sm-4 resource-thumb">Coming Soon!</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 hidden-xs resource-thumb">Coming Soon!</div>
-        <div class="col-sm-4 hidden-xs resource-thumb">Coming Soon!</div>
-        <div class="col-sm-4 hidden-xs resource-thumb">Coming Soon!</div>
+        <h3 class="text-center section-title footer-head">Get in touch</h3>      
+        <ul class="social-list text-center clearfix">
+          <li class="social-link col-xs-3"><a href="mailto:hello@ryanwilldev.com" target="_blank"><span class="fa fa-at social-icon"></span></a></li>
+          <li class="social-link col-xs-3"><a href="https://twitter.com/intent/tweet" target="_blank"><span class="fa fa-twitter social-icon"></span></a></li>
+          <li class="social-link col-xs-3"><a href="https://codepen.io/ryanwilldev" target="_blank"><span class="fa fa-codepen social-icon"></span></a></li>
+          <li class="social-link col-xs-3"><a href="https://github.com/ryanwilldev" target="_blank"><span class="fa fa-github social-icon"></span></a></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </footer>
   
  
 
