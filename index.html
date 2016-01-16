@@ -9,17 +9,95 @@
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
-  <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.js"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
+  <!-- Topbar -->
+    <div class="fixed">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="index.html">Ryan<strong>Will</strong></a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </section>
+      </nav>
+    </div> <!-- End Topbar -->
+
+    <!--About Section -->
+    <section id="about" class="headline">
+      <div class="row">
+        <div class="column large-12">
+          <h1 class="title">Ryan Will</h1>
+          <h3>Aspiring Web Developer from Nashville, TN</h3>
+          <h4 class="tag">Leveling up, one keystroke at a time</h4>
+        </div>
+      </div>
+    </section><!-- End About -->
   
-  
+    <!-- Work Section -->
+    <section id="work">
+      <div class="row">
+        <h2 class="work-title">My Work</h2>
+      </div>
+      <div class="row project project-1">
+        <div class="column medium-6">
+          <img src="https://placem.at/things?w=450&h=200&txt=0" alt="">
+        </div>
+        <div class="column medium-6 proj-desc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ullam blanditiis fugiat repellendus magni</p>
+        </div>
+      </div>
+      <div class="row project project-2">
+        <div class="column medium-6 push-6">
+          <img src="https://placem.at/people?w=450&h=200&txt=0&random=4" alt="">
+        </div>
+        <div class="column medium-6 pull-6 proj-desc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, eveniet, a! Aliquam minima porro ut consequunturum.</p>
+        </div>
+      </div>
+     <div class="row">
+        <hr>
+     </div>
+    </section><!-- End Work -->
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <footer>
+        <div class="row">
+          <h2 class="contact-title">Get In Touch</h2>
+        </div>
+        <div class="row">
+          <div class="column small-3 s-btn-email">
+            <a class="button rnd" href="mailto:hello@ryanwilldev.com" target="_blank"><i class="fa fa-at"></i></a></div>
+          <div class="column small-3 s-btn-twitter">
+            <a class="button rnd" href="https://twitter.com/ryanwilldev/intent/tweet?text=@ryanwilldev" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="column small-3 s-btn-codepen">
+          <a class="button rnd" href="https://codepen.io/ryanwilldev" target="_blank"><i class="fa fa-codepen"></i></a> 
+          </div>
+          <div class="column small-3 s-btn-github">
+          <a class="button rnd" href="https://github.com/ryanwilldev" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+    </section><!--End Contact -->
+
  
 
-
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
   <script src="assets/js/script.js"></script>
   </body>
 </html>
