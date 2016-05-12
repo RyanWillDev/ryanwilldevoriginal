@@ -29,7 +29,7 @@ module.exports = {
         test: /\.js$/,
       // But to exclude anything in the /node_modules directory
         exclude: /node_modules/,
-        loaders: ['react-hot','babel?presets[]=es2015,presets[]=react'],
+        loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react'],
       },
       {
         test: /\.html$/,
