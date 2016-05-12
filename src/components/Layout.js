@@ -1,11 +1,20 @@
 import React from 'react';
+import Header from './Header.js';
+import Footer from './Footer.js';
 
 class Layout extends React.Component {
-  render () {
+  constructor() {
+    super();
+  }
+  render() {
     return (
-      <h1>Test</h1>
+      <div className="container">
+        <Header />
+        <Footer />
+      </div>
     );
   }
+
 }
 
 export default Layout;

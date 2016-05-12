@@ -1,7 +1,9 @@
+var ExtractText = require('extract-text-webpack-plugin');
+
 // To build the dist folder run the webpack command
 
 module.exports = {
-  // Telling Webpack that our application lives in the app directory
+  // Telling Webpack that our application lives in the src directory
   context: __dirname + '/src',
   // Setting the entry point to our application
   entry: {
@@ -20,11 +22,10 @@ module.exports = {
     inline: true,
     port: 3333,
   },
-
-  // Adding loaders to transpile ES6 and JSX
   module: {
     loaders: [
       {
+        // Adding loaders to transpile ES6 and JSX
       // Tells Webpack to apply this loader to all .js files
         test: /\.js$/,
       // But to exclude anything in the /node_modules directory
@@ -32,9 +33,21 @@ module.exports = {
         loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react'],
       },
       {
+        // Used to run the index.html file through webpack
         test: /\.html$/,
         loader: 'file?name=[name].[ext]',
       },
+      {
+        // Compiles SCSS to CSS
+        test: /\.scss$/,
+        // Extracts the styles and puts them in dist/main.css
+        loader: ExtractText.extract('css!sass'),
+      },
     ],
   },
+  plugins: [
+    new ExtractText('main.css', {
+      allChunks: true,
+    }),
+  ],
 };
