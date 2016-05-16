@@ -5,7 +5,7 @@ var ExtractText = require('extract-text-webpack-plugin');
 module.exports = {
   // Telling Webpack that our application lives in the src directory
   context: __dirname + '/src',
-  // Setting the entry point to our application
+  // Setting the entry points to our application
   entry: {
     javascript: './app.js',
     html: './index.html',

@@ -1,5 +1,6 @@
+require('../scss/base.scss');
 import React from 'react';
-import Header from './Header.js';
+import Nav from './Nav.js';
 import Footer from './Footer.js';
 
 class Layout extends React.Component {
@@ -9,7 +10,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="container">
-        <Header />
+        <Nav />
         <Footer />
       </div>
     );
