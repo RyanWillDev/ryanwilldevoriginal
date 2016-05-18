@@ -1,6 +1,11 @@
-nav {
-  background-color: pink; }
-.container {
-  border: 5px solid red; }
+.float-left {
+  float: left; }
 
-/*# sourceMappingURL=main.css.map*/
+.float-right {
+  float: right; }
+html, body {
+  margin: 0;
+  width: 100%; }
+
+#root {
+  width: 100%; }

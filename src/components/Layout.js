@@ -1,6 +1,6 @@
 require('../scss/base.scss');
+require('../scss/layout.scss');
 import React from 'react';
-import Nav from './Nav.js';
 import Footer from './Footer.js';
 
 class Layout extends React.Component {
@@ -10,12 +10,17 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="container">
-        <Nav />
+        <main>
+          {this.props.children}
+        </main>
         <Footer />
       </div>
     );
   }
-
 }
+
+Layout.propTypes = {
+  children: React.PropTypes.func,
+};
 
 export default Layout;
