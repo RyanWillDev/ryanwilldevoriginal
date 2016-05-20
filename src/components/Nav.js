@@ -1,6 +1,6 @@
 require('../scss/nav.scss');
 import React from 'react';
-import NavLink from './NavLink.js';
+import NavLink from './NavLink';
 
 class Nav extends React.Component {
   render() {

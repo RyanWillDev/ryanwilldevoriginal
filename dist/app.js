@@ -66,15 +66,26 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
+	var _Contact = __webpack_require__(237);
+
+	var _Contact2 = _interopRequireDefault(_Contact);
+
+	var _Projects = __webpack_require__(238);
+
+	var _Projects2 = _interopRequireDefault(_Projects);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
-	  null,
+	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/', component: _Layout2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _About2.default })
+	    { path: '/index.html', component: _Layout2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _About2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _Projects2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -25986,7 +25997,7 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25996,16 +26007,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(168);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var NavLink = function NavLink(props) {
-	  var floatClass = "float-" + props.direction;
+	  var floatClass = 'float-' + props.direction;
+	  var path = '/' + props.componentName.toLowerCase();
 	  return _react2.default.createElement(
-	    "div",
+	    'div',
 	    { className: floatClass },
 	    _react2.default.createElement(
-	      "a",
-	      { href: "#" },
+	      _reactRouter.Link,
+	      { to: path },
 	      props.componentName
 	    )
 	  );
@@ -26025,6 +26039,130 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(234);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Contact = function (_React$Component) {
+	  _inherits(Contact, _React$Component);
+
+	  function Contact() {
+	    _classCallCheck(this, Contact);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Contact).apply(this, arguments));
+	  }
+
+	  _createClass(Contact, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'contact-container' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Testing!!!!'
+	        ),
+	        _react2.default.createElement(_Nav2.default, { left: 'About', right: 'Projects' })
+	      );
+	    }
+	  }]);
+
+	  return Contact;
+	}(_react2.default.Component);
+
+	exports.default = Contact;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Contact.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(234);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Projects = function (_React$Component) {
+	  _inherits(Projects, _React$Component);
+
+	  function Projects() {
+	    _classCallCheck(this, Projects);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).apply(this, arguments));
+	  }
+
+	  _createClass(Projects, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'projects-container' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Testing!!!!'
+	        ),
+	        _react2.default.createElement(_Nav2.default, { left: 'Contact', right: 'About' })
+	      );
+	    }
+	  }]);
+
+	  return Projects;
+	}(_react2.default.Component);
+
+	exports.default = Projects;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/ryan/Projects/ryanwilldev/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Projects.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }
 /******/ ]);
