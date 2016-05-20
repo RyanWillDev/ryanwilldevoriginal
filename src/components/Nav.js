@@ -6,8 +6,8 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="nav-links">
-      <NavLink componentName={this.props.left} direction="left"/>
-      <NavLink componentName={this.props.right} direction="right"/>
+      <NavLink componentName={this.props.left} direction="left" />
+      <NavLink componentName={this.props.right} direction="right" />
       </div>
     );
   }

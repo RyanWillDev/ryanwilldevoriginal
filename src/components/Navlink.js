@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 
 const NavLink = (props) => {
-  let floatClass = `float-${props.direction}`;
+  const floatClass = `float-${props.direction}`;
+  const path = `/${props.componentName.toLowerCase()}`;
   return (
     <div className={floatClass}>
-      <a href="#">{props.componentName}</a>
+      <Link to={path}>{props.componentName}</Link>
     </div>
   );
 };
