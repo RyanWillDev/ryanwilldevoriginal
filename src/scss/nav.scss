@@ -1,7 +1,32 @@
+@import 'variables';
+
+a {
+  font-family: $web-font-norm;
+}
+
 .float-left {
   float: left;
 }
 
 .float-right {
   float: right;
+}
+
+nav {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-links {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+
+  margin: 0 auto;
 }
