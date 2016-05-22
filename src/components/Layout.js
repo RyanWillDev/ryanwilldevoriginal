@@ -1,5 +1,5 @@
 require('../scss/base.scss');
-// require('../scss/layout.scss');
+require('../scss/layout.scss');
 import React from 'react';
 import Footer from './Footer.js';
 
