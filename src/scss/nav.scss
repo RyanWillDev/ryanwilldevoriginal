@@ -6,10 +6,12 @@ a {
 
 .float-left {
   float: left;
+  padding-right: 16px;
 }
 
 .float-right {
   float: right;
+  padding-left: 15px;
 }
 
 nav {
@@ -31,6 +33,14 @@ nav {
   margin: 0 auto;
 }
 
-.float > a {
-  font-size: 1.25em;
+.float {
+  & > a {
+    font-size: 1.25em;
+
+    padding: 5px;
+
+    & > i {
+      font-size: 1em;
+    }
+  }
 }
