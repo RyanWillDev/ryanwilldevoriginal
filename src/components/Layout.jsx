@@ -1,7 +1,7 @@
 require('../scss/base.scss');
 require('../scss/layout.scss');
 import React from 'react';
-import Footer from './Footer.js';
+import Footer from './Footer';
 
 class Layout extends React.Component {
   constructor() {

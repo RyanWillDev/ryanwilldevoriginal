@@ -17,7 +17,10 @@ module.exports = {
   // The directory it will be written to
     path: __dirname + '/dist',
   },
-
+  devtool: 'source-map',
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
   devServer: {
     inline: true,
     port: 3333,
@@ -27,7 +30,7 @@ module.exports = {
       {
         // Adding loaders to transpile ES6 and JSX
       // Tells Webpack to apply this loader to all .js files
-        test: /\.js$/,
+        test: /\.jsx?$/,
       // But to exclude anything in the /node_modules directory
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react'],
