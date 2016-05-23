@@ -13,7 +13,7 @@ class Footer extends React.Component {
           <li><a href="https://github.com/ryanwilldev"><i className="fa fa-github"></i></a></li>
           <li><a href="https://codepen.io/ryanwilldev"><i className="fa fa-codepen"></i></a></li>
           <li><a href="https://twitter.com/ryanwilldev"><i className="fa fa-twitter"></i></a></li>
-          <li><a href="mailto:ryanwilldev@gmail.com"><i className="fa fa-envelope"></i></a></li>
+          <li><a href="mailto:hello@ryanwilldev.com"><i className="fa fa-envelope"></i></a></li>
         </ul>
       </div>
     );

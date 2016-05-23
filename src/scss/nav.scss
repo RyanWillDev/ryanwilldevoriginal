@@ -1,7 +1,7 @@
 @import 'variables';
 
 a {
-  font-family: $web-font-norm;
+  font-family: $web-font-main;
 }
 
 .float-left {
@@ -29,4 +29,8 @@ nav {
   width: 95%;
 
   margin: 0 auto;
+}
+
+.float > a {
+  font-size: 1.25em;
 }

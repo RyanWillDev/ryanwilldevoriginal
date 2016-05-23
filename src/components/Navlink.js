@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 
 const NavLink = (props) => {
-  const floatClass = `float-${props.direction}`;
+  const floatClass = ` float float-${props.direction}`;
   const path = `/${props.componentName.toLowerCase()}`;
   return (
     <div className={floatClass}>
