@@ -1,6 +1,7 @@
 require('../scss/base.scss');
 require('../scss/layout.scss');
 import React from 'react';
+import MobileNav from './MobileNav';
 import Footer from './Footer';
 
 class Layout extends React.Component {
@@ -9,7 +10,8 @@ class Layout extends React.Component {
   }
   render() {
     return (
-      <div className="container">
+      <div>
+      <MobileNav />
         <main>
           {this.props.children}
         </main>
