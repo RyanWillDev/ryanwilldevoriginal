@@ -6,7 +6,7 @@ class Nav extends React.Component {
   render() {
     return (
       <nav>
-        <div className="nav-links">
+        <div className="web-nav nav-links">
         <NavLink componentName={this.props.left} direction="left" />
         <NavLink componentName={this.props.right} direction="right" />
         </div>

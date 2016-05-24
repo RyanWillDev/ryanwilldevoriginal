@@ -1,0 +1,14 @@
+h2 {
+  text-align: center;
+}
+
+#featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.featured-project {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}

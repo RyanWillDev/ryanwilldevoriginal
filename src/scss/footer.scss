@@ -1,8 +1,17 @@
+@import 'variables';
+
 .social-links {
-  position: absolute;
+  position: fixed;
   bottom: 48px;
   margin: 0 auto;
   width: 100%;
+
+  @media screen and (max-width: 50em) {
+    background-color: $font-color-main;
+    bottom: 0px;
+    position: fixed;
+    height: 40px;
+  }
 }
 
 .social-icons {
@@ -11,7 +20,7 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   margin: 0 auto;
   width: 80%;
@@ -23,8 +32,16 @@
   & > li > a {
     text-decoration: none;
   }
+  @media screen and (max-width: 50em) {
+    height: 100%;
+    align-items: center;
+  }
 }
 
 .fa {
   font-size: 1.5em;
+
+  @media screen and (max-width: 50em) {
+    color: $bg-color;
+  }
 }
