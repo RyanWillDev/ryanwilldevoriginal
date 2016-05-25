@@ -12,14 +12,9 @@ const RadiumLink = Radium(Link);
 export default class MobileNav extends React.Component {
 
   render() {
-    const styles = {
-      bmBurgerBars: {
-        color: 'tomato',
-      },
-    }
     return (
       <div id="mobile-nav">
-        <Menu style={styles}>
+        <Menu>
           <RadiumLink className="menu-item" to="/about">About</RadiumLink>
           <RadiumLink className="menu-item" to="/projects">Projects</RadiumLink>
           <RadiumLink className="menu-item" to="/contact">Contact</RadiumLink>
