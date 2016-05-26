@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'extends';
+
+#contact-title {
+  padding-top: 88px;
+  text-align: center;
+
+  margin-top: 0;
+}
+
+#contact-cta {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  width: 90%;
+
+  margin: 10% auto;
+
+  & input {
+    @extend %b-radius;
+    border: none;
+    font-size: 0.8em;
+    padding: 8px;
+  }
+
+  & textarea {
+    @extend %b-radius;
+    border: none;
+  }
+}
+
+#contact-info {
+  margin: 0 auto 7%;
+  width: 100%;
+}
+
+#name, #replyto {
+  width: 40%;
+}
+
+#name {
+  margin-right: 8px;
+}
+
+#subject {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+#message {
+  display: block;
+  margin: 5% auto 5%;
+  height: 300px;
+  width: 300px;
+}
+
+#submit {
+  @extend %b-radius;
+  background-color: $font-color-main;
+  height: 40px;
+  width: 80px;
+}
