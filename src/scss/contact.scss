@@ -2,22 +2,27 @@
 @import 'extends';
 
 #contact-title {
-  padding-top: 88px;
   text-align: center;
 
   margin-top: 0;
+  padding-top: 88px;
 }
 
 #contact-cta {
   font-size: 1.25em;
   text-align: center;
+
+  padding: 0 16px 16px;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 80%;
 }
 
 form {
+  height: 40vh;
   text-align: center;
-  width: 90%;
-
-  margin: 10% auto;
 
   & input {
     @extend %b-radius;
@@ -46,6 +51,8 @@ form {
 }
 
 #subject {
+  background-color: $font-color-main;
+  color: $bg-color;
   margin-left: 8px;
   margin-top: 8px;
 }
@@ -53,8 +60,8 @@ form {
 #message {
   display: block;
   margin: 5% auto 5%;
-  height: 300px;
-  width: 300px;
+  height: 70%;
+  width: 100%;
 }
 
 #submit {
