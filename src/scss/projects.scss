@@ -12,6 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .featured-project {
