@@ -20,9 +20,23 @@ class Projects extends React.Component {
       wiki: {
         siteLink: 'http://codepen.io/ryanwilldev/full/RayVjJ',
         imgLink: 'http://s3-us-west-2.amazonaws.com/i.cdpn.io/315266.RayVjJ.small.01c029f1-c285-482e-af14-b74b229fcedc.png',
-        imgAlt: 'Wikipedia Search App',
+        imgAlt: 'Wikipedia Search',
         title: 'Wikipedia Viewer',
-        desc: 'Wikipedia search app from FreeCodeCamp',
+        desc: 'Wikipedia search project from FreeCodeCamp. Returns search results from Wikipedia.',
+      },
+      weather: {
+        siteLink: 'http://codepen.io/ryanwilldev/full/ZWJgKy',
+        imgLink: 'http://s3-us-west-2.amazonaws.com/i.cdpn.io/315266.ZWJgKy.small.810c5f06-313b-4234-ae3e-85e963f2aa34.png',
+        imgAlt: 'Local Weather Search',
+        title: 'Local Weather',
+        desc: 'Weather search from FreeCodeCamp. Uses Open Weather Map API to display weather data.',
+      },
+      quotes: {
+        siteLink: 'http://codepen.io/ryanwilldev/full/OyKVOa',
+        imgLink: 'http://s3-us-west-2.amazonaws.com/i.cdpn.io/315266.OyKVOa.small.95418491-ecfd-47a3-9228-7bdbf01811c3.png',
+        imgAlt: 'Random Quote',
+        title: 'Random Quote',
+        desc: 'Uses the Forismatic API to display random quotes. It also allows you to share them on Twitter.',
       },
     };
 
@@ -36,13 +50,18 @@ class Projects extends React.Component {
           <Project siteLink={projInfo.wiki.siteLink} imgLink={projInfo.wiki.imgLink}
             imgAlt={projInfo.wiki.imgAlt} title={projInfo.wiki.title} desc={projInfo.wiki.desc}
           />
+          <Project siteLink={projInfo.weather.siteLink} imgLink={projInfo.weather.imgLink}
+            imgAlt={projInfo.weather.imgAlt} title={projInfo.weather.title} desc={projInfo.weather.desc}
+          />
+          <Project siteLink={projInfo.quotes.siteLink} imgLink={projInfo.quotes.imgLink}
+            imgAlt={projInfo.quotes.imgAlt} title={projInfo.quotes.title} desc={projInfo.quotes.desc}
+          />
         </div>
         <Nav left="Contact" right="About" />
       </div>
 
     );
   }
-
 }
 
 export default Projects;
