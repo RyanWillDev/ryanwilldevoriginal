@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 /node_modules/
 .DS_Store
+=======
+_site
+.sass-cache
+>>>>>>> a2a851ececea888769b1eb767bc3749934e95d00

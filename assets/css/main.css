@@ -1,0 +1,109 @@
+/* Typograph & Icons 
+=======================*/
+.headline {
+	text-align: center;
+}
+
+h1.title {
+	color: #2d2c2c;
+	font-family: "Lato", Helvetica;
+	font-weight: 700;
+}
+
+.rnd {
+	border-radius: 5px;
+}
+
+/* Large Screens
+=======================*/
+@media screen and (min-width: 64em) {
+	h1.title {
+		font-size: 4em;
+	}
+}
+
+/* Headline Styles
+=======================*/
+.headline {
+	background-image: linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.6)),
+					  url("../img/main-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	text-transform: uppercase;
+	
+	padding: 72px 0 48px 0;
+}
+
+.tag {
+	padding-bottom: 46px;
+}
+
+/* Large Screens
+=======================*/
+@media screen and (min-width: 64em) {
+	.title {
+		margin-bottom: 48px;
+	}
+	
+	.headline {
+		height: 80%
+	}
+}
+
+/* Medium Screens
+=======================*/
+@media screen and (min-width: 40em) {
+	.headline {
+		max-height: 80%;
+	}
+}
+
+/* Work Styles
+=======================*/
+
+.work-title {
+	text-align: center;
+	
+	padding: 32px 0 32px 0;
+	margin-bottom: 48px;
+}
+
+.project-2 {
+	margin-top: 96px;
+	margin-bottom: 64px;
+}
+
+/* Small Screens 
+==================*/
+@media screen and (max-width: 39.9375em) {
+	.proj-desc {
+		padding-top: 32px;
+	}
+}
+
+
+/* Contact Styles
+=======================*/
+
+.contact-title {
+	text-align: center;
+	
+	padding-top: 16px;
+	margin-bottom: 32px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* Large Screens
+=======================*/
+@media screen and (min-width: 64em) {
+	.contact-title {
+		margin-bottom: 48px;
+	}
+
+}
